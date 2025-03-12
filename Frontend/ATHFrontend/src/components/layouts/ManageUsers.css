@@ -1,0 +1,104 @@
+/* Main container for user management */
+.manage-users {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .manage-users h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Styling for the user list */
+  .manage-users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80vw;
+  }
+  
+  .manage-users ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .manage-users ul li:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Username and email styling */
+  .manage-users ul li span {
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .manage-users ul li .user-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Button styling */
+  .manage-users ul li button {
+    padding: 10px 14px;
+    margin-left: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .manage-users ul li button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .manage-users ul li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .manage-users ul li span {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+  
+    .manage-users ul li button {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  
+    .manage-users ul li .user-actions {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .manage-users ul li {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .manage-users h2 {
+      font-size: 1.6rem;
+    }
+  
+    .manage-users ul li button {
+      padding: 8px 10px;
+    }
+  }
+  

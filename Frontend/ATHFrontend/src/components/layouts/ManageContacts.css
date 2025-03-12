@@ -1,0 +1,103 @@
+/* Main container for contacts management */
+.manage-contacts {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.manage-contacts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the contacts list */
+.manage-contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.manage-contacts ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.manage-contacts ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* Username and message styling */
+.manage-contacts ul li span {
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+    text-align: left;
+}
+
+.manage-contacts ul li .contact-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Button styling */
+.manage-contacts ul li button {
+    padding: 10px 14px;
+    margin-left: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.manage-contacts ul li button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .manage-contacts ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .manage-contacts ul li span {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .manage-contacts ul li button {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .manage-contacts ul li .contact-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .manage-contacts ul li {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .manage-contacts h2 {
+        font-size: 1.6rem;
+    }
+
+    .manage-contacts ul li button {
+        padding: 8px 10px;
+    }
+}

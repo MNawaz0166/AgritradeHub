@@ -1,0 +1,87 @@
+/* General Layout */
+.faqs-page {
+    padding: 2rem;
+  }
+  
+  /* Hero Section */
+  /* .faqs-hero {
+    background-image: url('../images/FAQs3.png');
+    background-size: cover;
+    background-position: top;
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+    height: 350px;
+  } */
+  .faqs-hero {
+    background-image: url('../images/FAQs3.png');
+    background-size: cover;  /* Ensures the full image is visible */
+    background-position: top; /* Centers the image */
+    /* background-repeat: no-repeat; Prevents repeating */
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Adjusts the height to fit the image */
+    min-height: 350px; /* Ensures a minimum height */
+}
+
+
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  
+  /* FAQs Section */
+  .faqs-section {
+    margin: 3rem 0;
+  }
+  
+  .faq-item {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .faq-question h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .faq-question span {
+    font-size: 1.5rem;
+  }
+  
+  .faq-answer {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+  }
+  

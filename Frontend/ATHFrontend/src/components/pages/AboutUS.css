@@ -1,0 +1,128 @@
+/* General Layout */
+.about-page {
+    padding: 2rem;
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    background-image: url('../images/aboutus.png');
+    background-size: cover;
+    background-position:bottom;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    height: 70vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  
+  /* Mission, Vision, Values */
+  .mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .mv-section {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .mv-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mv-section p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Our Story and Team */
+  .our-story {
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .our-story h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .our-story p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #555;
+  }
+  
+  .team-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Call-to-Action Section */
+  .cta-section {
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 3rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    background-color: white;
+    color: #2a9d8f;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
