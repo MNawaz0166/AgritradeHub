@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutUS.css';
 import {Link} from "react-router-dom"
-import { useAuth } from '../tokenStore/auth';
+import { useAuth } from '../tokenStore/Auth';
 
 const AboutUs = () => {
   const {isLoggedin}=useAuth();
