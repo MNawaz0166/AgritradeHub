@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     // Logic for form submission (e.g., send data to backend)
     try {
-       const response=await fetch("http://localhost:8000/api/auth/login",{
+       const response=await fetch("agritrade-hub-backend1.vercel.app",{
         method:"POST",
         headers:{
           'Content-Type':"application/json"
