@@ -14,7 +14,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/buylist/buy"); // Adjust the API endpoint as per your backend
+        const response = await fetch("agritrade-hub-backend1.vercel.app"); // Adjust the API endpoint as per your backend
         if (!response.ok) {
           throw new Error('Failed to fetch product details');
         }
