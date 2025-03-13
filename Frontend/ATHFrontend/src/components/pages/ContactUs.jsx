@@ -29,7 +29,7 @@ const ContactUs = () => {
   const handleContactSubmitForm= async(e)=>{
       e.preventDefault();
       try{
-      const response=await fetch("http://localhost:8000/api/contactForm/contact",{
+      const response=await fetch("agritrade-hub-backend1.vercel.app",{
         method:"POST",
         headers:{
           'Content-Type':"application/json"
