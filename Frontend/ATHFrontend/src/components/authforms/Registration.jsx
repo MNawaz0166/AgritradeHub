@@ -24,7 +24,7 @@ const Registration = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/api/auth/register", {
+      const response = await fetch("agritrade-hub-backend1.vercel.app", {
         method: "POST",
         headers: {
           'Content-Type': "application/json"
