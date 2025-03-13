@@ -10,7 +10,7 @@ const ManageListings = () => {
     // Fetch all listings from the backend
     const fetchListings = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/admin/listings', {
+        const response = await fetch('agritrade-hub-backend1.vercel.app', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,
