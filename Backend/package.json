@@ -1,13 +1,13 @@
 {
-   "name": "your-backend",
+   "name": "backend",
   "version": "1.0.0",
   "description": "Backend for AgriTradeHub",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "node index.js",
+    "start": "node server.js.js",
+    "dev": "nodemon server.js",
+    "build": "node server.js",
     "vercel-build": "npm install"
   },
   "keywords": [],
