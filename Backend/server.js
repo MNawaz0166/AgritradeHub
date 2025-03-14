@@ -10,7 +10,7 @@ const connectDB=require("./Database/db");
 const cors=require("cors")
 const corsOptions={
    origin:"agritrade-hub-frontend6.vercel.app",
-   methods:"POST,GET,PATCH,PUT,DELETE,HEAD",
+   methods:["POST","GET","PATCH","PUT","DELETE","HEAD"],
    credentials:true
 }
 const PORT=process.env.PORT ||8000;
