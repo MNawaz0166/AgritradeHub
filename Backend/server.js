@@ -13,6 +13,7 @@ const corsOptions={
    methods:"POST,GET,PATCH,PUT,DELETE,HEAD",
    credentials:true
 }
+const PORT=process.env.PORT ||8000;
 app.use(cors(corsOptions))
 app.use(express.json());
 app.use("/api/auth",router)
@@ -21,7 +22,7 @@ app.use("/api/listproduct",listRouter)
 app.use("/api/buylist",buyListRouter)
 app.use("/api/admin",adminRouter)
 connectDB().then(()=>{
-   app.listen(8000,()=>{
-      console.log("server is listining on port : 8000")
+   app.listen(PORT,()=>{
+      console.log("server is listining on port : ",PORT)
    })
 })
