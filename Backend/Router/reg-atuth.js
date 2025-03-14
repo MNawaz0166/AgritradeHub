@@ -5,8 +5,9 @@ const controllers=require("../Controllers/controller");
 //const validation=require("../middlewares/validation_middlewares")
 const authMiddleware=require("../middlewares/auth-middleware");
 // const checkSeller = require("../middlewares/check_seller_middleware");
-router.route("/register").post(validation(signUpSchema),controllers.register);
+router.route("/register").post(controllers.register);
 router.route("/login").post(controllers.login)
 router.route("/user").get(authMiddleware,controllers.user)
 // router.route("/products").post(authMiddleware,checkSeller,controllers.product)
 module.exports=router;
+//validation(signUpSchema),
