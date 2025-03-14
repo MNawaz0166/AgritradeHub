@@ -9,7 +9,7 @@ const adminRouter=require("./Router/admin_router")
 const connectDB=require("./Database/db");
 const cors=require("cors")
 const corsOptions={
-   origin:"",
+   origin:"agritrade-hub-frontend6.vercel.app",
    methods:"POST,GET,PATCH,PUT,DELETE,HEAD",
    credentials:true
 }
