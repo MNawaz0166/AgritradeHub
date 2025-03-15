@@ -11,7 +11,7 @@ const ManageUsers = () => {
     // Fetch all users from the backend
     const fetchUsers = async () => {
       try {
-        const response = await fetch('agritrade-hub-backend1.vercel.app', {
+        const response = await fetch('https://agritrade-hub-backend.vercel.app/', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,
