@@ -18,7 +18,7 @@ export const AuthProvider=({children})=>{
     const [user,setUser]=useState({})
     const userData= async()=>{
       try {
-        const response=await fetch("agritrade-hub-backend1.vercel.app",{
+        const response=await fetch("https://agritrade-hub-backend.vercel.app/",{
                  method:"GET",
                  headers:{
                   "Authorization":`Bearer ${token}`
