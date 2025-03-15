@@ -46,7 +46,7 @@ const Sell = () => {
     formData.append("img", listingInputs.img); // The image file
 
     try {
-      const response = await fetch("agritrade-hub-backend1.vercel.app", {
+      const response = await fetch("https://agritrade-hub-backend.vercel.app/", {
         method: "POST",
         headers: {
           'Authorization': `Bearer ${token}`,
