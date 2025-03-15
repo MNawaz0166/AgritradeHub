@@ -10,7 +10,7 @@ const ManageContacts = () => {
     // Fetch all contacts from the backend
     const fetchContacts = async () => {
       try {
-      const response = await fetch('agritrade-hub-backend1.vercel.app', {
+      const response = await fetch('https://agritrade-hub-backend.vercel.app/', {
         method: "GET",
         headers: {
           "Authorization": `Bearer ${token}`
