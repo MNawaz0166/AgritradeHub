@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-//const router = require("./Router/reg-atuth");
+const router = require("./Router/reg-atuth");
 const contactRouter = require("./Router/contact_route");
 const listRouter = require("./Router/list_router");
 const buyListRouter = require("./Router/buy_list_router");
