@@ -24,7 +24,7 @@ const Registration = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("agritrade-hub-backend1.vercel.app", {
+      const response = await fetch("https://agritrade-hub-backend.vercel.app/", {
         method: "POST",
         headers: {
           'Content-Type': "application/json"
