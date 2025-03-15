@@ -12,7 +12,7 @@ const Buy = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("agritrade-hub-backend1.vercel.app");
+        const response = await fetch("https://agritrade-hub-backend.vercel.app/");
         if (response.ok) {
           const data = await response.json();
           // console.log(data.products[0]._id)
